@@ -1,0 +1,48 @@
+version: "3.9"
+
+services:
+  postgres_b2b_platform:
+    image: postgres:15
+    container_name: postgres_b2b
+    command: postgres -c 'max_connections=10'
+    # restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pg_b2b:/var/lib/postgresql/data
+      - ./generate_data/:/usr/lib/generate_data/
+      - ./generate_data/load_data.sh:/usr/load_data.sh
+    environment:
+      - POSTGRES_PASSWORD=${PG_B2B_PWD}
+      - POSTGRES_USER=${PG_B2B_USER}
+      - POSTGRES_DB=${PG_B2B_DB}
+
+  dagster:
+    image: pipeline
+    container_name: dagster
+    # restart: always
+    ports:
+      - 4000:4000
+    environment:
+      DAGSTER_HOME: /opt/dagster/dagster_home
+    volumes:
+      - ./dagster_home:/opt/dagster/dagster_home
+      - ./etl_project/etl_project/:/opt/dagster/app/pipeline
+      - ./etl_project/data/:/tmp/data/
+    links:
+      - postgres_b2b_platform
+
+  postgres_dwh:
+    image: postgres:15
+    container_name: postgres_dwh
+    hostname: postgres_dwh
+    ports:
+      - 5433:5432
+    volumes:
+      - ./pg_dwh:/var/lib/pg_dwh/data
+    environment:
+      - POSTGRES_USER=${PG_DWH_USER}
+      - POSTGRES_DB=${PG_DWH_DB}
+      - POSTGRES_PASSWORD=${PG_DWH_PWD}
+    links:
+      - dagster
