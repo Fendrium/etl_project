@@ -7,7 +7,6 @@ This project is a small ETL project using the following architecture:
 - Data Warehouse hosed in a 2nd PostgreSQL database
 
 Additionally, there is a Python script and a few shell scripts to generate and preload simulated B2B data
-Because of time constraints I was not able to complete the weblog part
 
 ## Usage
 
