@@ -1,0 +1,51 @@
+id,cuit_no,name,is_supplier
+0,124778,Wilson and Sons,False
+1,142244,"Ibarra, Robinson and Hernandez",False
+2,395530,"Martinez, Pope and Collins",False
+3,957692,Gomez Group,False
+4,196774,"Holmes, Cline and Walker",False
+5,481618,Duran-Alexander,True
+6,365590,"Moody, Carpenter and Palmer",False
+7,849894,"Kelly, Daniels and Blankenship",True
+8,417150,"Johnson, Barnes and Johnson",False
+9,560721,Lucero Inc,False
+10,262568,Jimenez PLC,False
+11,580528,"Weeks, Sullivan and Jones",True
+12,576004,Allen Inc,True
+13,403975,Johnson Group,False
+14,360058,"Bell, Fernandez and Ellis",True
+15,213099,"Farrell, Clarke and Morrison",True
+16,602453,"Sullivan, Stewart and Jones",False
+17,412018,Tucker Ltd,True
+18,377112,Smith-Bender,True
+19,622465,"Knox, Watson and Beck",True
+20,571768,Taylor-Rice,True
+21,483893,Smith-Morgan,True
+22,342750,Harmon and Sons,False
+23,258829,Diaz Ltd,False
+24,273625,Davis and Sons,True
+25,777205,Thomas and Sons,True
+26,290244,"Johnson, Jenkins and Day",False
+27,346290,"Martinez, Barber and Williams",False
+28,298308,Acosta Ltd,True
+29,635306,"Thompson, Mckay and Ross",False
+30,689619,Shepard Group,False
+31,233486,Galvan and Sons,False
+32,618476,Cook Ltd,False
+33,724092,Quinn and Sons,False
+34,975772,Cox-Moreno,False
+35,868913,Andrews-Hendricks,True
+36,468906,Palmer-Grant,True
+37,339122,Hurley-Alvarez,True
+38,196463,"Estrada, Russell and Howard",False
+39,240443,"Burke, Davis and Delgado",True
+40,990066,Reed LLC,False
+41,351909,Rivera Inc,True
+42,789677,Preston Group,True
+43,368576,Johnson-Johnston,True
+44,304835,Swanson PLC,False
+45,377142,Lee Ltd,True
+46,521416,Colon-Fowler,False
+47,518986,Miller-Flores,False
+48,498356,Buchanan and Sons,False
+49,317588,Smith Group,False
